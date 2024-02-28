@@ -1,0 +1,61 @@
+<dashboard-tab
+    tab-name="TeleOperated"
+    slot="tab"
+    selected=""
+    source-provider="NetworkTables"
+><frc-camera-wrapper
+        source-provider="NetworkTables"
+        style="transform: translate(35.6px, 17.2px); width: 322.762px; height: 238.4px;"
+        source-key="/CameraPublisher/photonvision_Port_1184_Output_MJPEG_Server"
+        streams="[]"
+        background-color="black"
+        wait-image="./no-camera-stream.jpg"
+        crosshair-color="white"
+    ></frc-camera-wrapper><frc-field-wrapper
+        source-key="/SmartDashboard/Field"
+        source-provider="NetworkTables"
+        style="transform: translate(17.3937px, 262.394px); width: 747.2px; height: 315.6px;"
+        game="Crescendo"
+        grid-size="1"
+    >
+    </frc-field-wrapper><frc-camera-wrapper
+        source-provider="NetworkTables"
+        style="transform: translate(363.994px, 20.7875px); width: 293.981px; height: 221.975px;"
+        source-key="/CameraPublisher/photonvision2_Port_1184_Output_MJPEG_Server"
+        streams="[]"
+        background-color="black"
+        wait-image="./no-camera-stream.jpg"
+        crosshair-color="white"
+    ></frc-camera-wrapper><vaadin-text-field
+        label="Robot State"
+        has-label=""
+        source-provider="NetworkTables"
+        style="transform: translate(669.794px, 19.975px); width: 192px; height: 115.8px;"
+    ><input
+            slot="input"
+            type="text"
+            id="vaadin-text-field-2"
+            aria-labelledby="label-vaadin-text-field-296"
+            aria-describedby=""
+        ><label
+            slot="label"
+            id="label-vaadin-text-field-296"
+            for="vaadin-text-field-2"
+        >Label</label>
+        <div
+            slot="error-message"
+            id="error-message-vaadin-text-field-246"
+            hidden=""
+        ></div>
+    </vaadin-text-field><frc-boolean-box
+        source-provider="NetworkTables"
+        style="transform: translate(734px, 162.8px); width: 88.8px; height: 80px;"
+    ></frc-boolean-box><frc-mechanism2d-wrapper
+        source-provider="NetworkTables"
+        style="transform: translate(797.8px, 287px);"
+        dims="[3,3]"
+    ></frc-mechanism2d-wrapper></dashboard-tab><dashboard-tab
+    slot="tab"
+    tab-name="Autonomous"
+    source-provider="NetworkTables"
+></dashboard-tab>
